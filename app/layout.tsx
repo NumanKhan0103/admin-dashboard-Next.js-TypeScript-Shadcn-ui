@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Khan Academy Dashboard",
+  title: "Khan Academy",
   description: "Admin dashboard for Khan Academy",
 };
 
