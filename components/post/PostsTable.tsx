@@ -55,9 +55,9 @@ export default function PostsTable({ title, limit }: PostsTableProps) {
                   <Link href={`/posts/${post.id}`}>
                     <button className="bg-blue-500 text-white px-2 py-1 rounded me-2">View</button>
                   </Link>
-                  <Link href={`/posts/edit/${post.id}`}>
+                  {/* <Link href={`/posts/edit/${post.id}`}>
                     <button className="bg-blue-500 text-white px-2 py-1 rounded">Edit</button>
-                  </Link>
+                  </Link> */}
                 </TableCell>
               </TableRow>
             ))

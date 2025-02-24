@@ -2,6 +2,7 @@ import Image from "next/image";
 import DashboardCard from "@/components/dashboard/DashboardCard";
 import PostsTable from "@/components/post/PostsTable";
 import { Folder, MessageCircle, Newspaper, User } from "lucide-react";
+import AnalyticsChart from "@/components/dashboard/AnalyticsChart";
 
 export default function Home() {
   return (
@@ -30,8 +31,9 @@ export default function Home() {
         />
       </div>
 
-      <PostsTable title="Recent Posts" limit={5} />
+      <AnalyticsChart />
       
+      <PostsTable title="Recent Posts" limit={5} />
       </>
   );
 }
