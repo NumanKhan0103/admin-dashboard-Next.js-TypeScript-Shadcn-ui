@@ -1,4 +1,4 @@
-import { PostComment } from "@/interfaces/postCommentsInterface";
+import { Comment } from "@/interfaces/commentInterface";
 
 export interface Post {
     id: number;
@@ -6,5 +6,5 @@ export interface Post {
     body: string;
     author: string;
     date: string;
-    comments: PostComment[];
+    comments: Comment[];
 }
