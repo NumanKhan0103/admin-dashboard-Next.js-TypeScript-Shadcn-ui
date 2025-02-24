@@ -41,12 +41,12 @@ export default function Sidebar() {
                         <CommandShortcut> Ctrl + P</CommandShortcut>
                     </CommandItem>
                     <CommandItem>
-                        <User className="mr-2 h-4 w-4" />
+                        <CreditCard className="mr-2 h-4 w-4" />
                         <span>Billing</span>
                         <CommandShortcut> Ctrl + B</CommandShortcut>
                     </CommandItem>
                     <CommandItem>
-                        <User className="mr-2 h-4 w-4" />
+                        <Settings className="mr-2 h-4 w-4" />
                         <span>Setting</span>
                         <CommandShortcut> Ctrl + S</CommandShortcut>
                     </CommandItem>
