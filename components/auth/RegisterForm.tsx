@@ -72,11 +72,31 @@ export default function RegisterForm() {
             <Card>
                 <CardHeader>
                     <CardTitle> Register </CardTitle>
-                    <CardDescription> Log in to your account with you credentials</CardDescription>
+                    <CardDescription> Sing up by adding info below </CardDescription>
                 </CardHeader>
                 <CardContent className='space-y-2'>
                     <Form {...form}>
                         <form onSubmit={form.handleSubmit(onSubmit)} className='space-y-6'>
+                           
+                           {/* name  */}
+                           <FormField
+                                control={form.control}
+                                name="name"
+                                render={({ field }) => (
+                                    <FormItem>
+                                        <FormLabel className='uppercase text-xs font-bold text-zinc-500 dark:text-white'>Name</FormLabel>
+                                        <FormControl>
+                                            <Input
+                                                className='bg-slate-100 dark:bg-slate-500 border-0 focus-visible:ring-0 text-black dark:text-white focus-visible:ring-offset-0'
+                                                placeholder="Enter Name "
+                                                {...field} />
+                                        </FormControl>
+                                        <FormMessage />
+                                    </FormItem>
+                                )}
+                            />
+
+                           {/* email  */}
                             <FormField
                                 control={form.control}
                                 name="email"
@@ -116,7 +136,7 @@ export default function RegisterForm() {
                             {/* confirm password  */}
 <FormField
                                 control={form.control}
-                                name="password"
+                                name="confirmPassword"
                                 render={({ field }) => (
                                     <FormItem>
                                         <FormLabel className='uppercase text-xs font-bold text-zinc-500 dark:text-white'>Confirm Password</FormLabel>
